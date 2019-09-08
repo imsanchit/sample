@@ -1,0 +1,39 @@
+{
+    "cors": {
+        "maxAge": 600
+    },
+    "bind": {
+        "port": 3000,
+        "host": "localhost"
+    },
+    "mysql": {
+        "local": {
+            "username": "root",
+            "password": "password",            
+            "database": "examino",
+            "host": "localhost"
+        },
+        "google": {
+            "username": "root",
+            "password": "iu53xBddBFmE9CD4",
+            "database": "abc",
+            "host": "35.200.250.216",
+            "port": 3306,
+            "pool": {
+                "max": 100,
+                "min": 0,
+                "acquire": 30000,
+                "idle": 10000
+            }
+        }
+        
+    },
+    "postmark": {
+        "from": "sanchit.mittal@hotcocoasoftware.com",
+        "apiKey": "15a1e11a-68fe-40a1-94da-4919a7bd9a78"
+    },
+
+    "edgeDashboard": {
+        "host": "http://localhost:3060"
+    }
+}
