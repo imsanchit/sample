@@ -30,4 +30,19 @@ router
             "response": "mail sent"
         }
     })
+    .post('/test', async (ctx, next) => {
+        const {
+            name
+        } = ctx.request.body;
+        ctx.status = 200;
+        ctx.body = {
+            "response": name
+        }
+    })
+    .get('/test', async (ctx, next) => {
+        ctx.status = 200;
+        ctx.body = {
+            "response": "name"
+        }
+    })
 module.exports = router;
